@@ -198,25 +198,9 @@ public class Lista {
                 return true;
             }
         }
-        
+
         return false;
     }
 
-    public void receberVetor(int[] vetor) {
-
-        if (isFull()) {
-            System.out.println("A lista está cheia!\n");
-        }
-
-        if (vetor.length > 0) {
-            for (int i = 0; i < vetor.length; i++) {
-                if (vetor[i] > 0) {
-                    inserirNoFim(vetor[i]);
-                } else {
-                    System.out.println("O vetor informado está vazio\nVerifique!");
-                    break;
-                }
-            }
-        }
-    }
+    
 }
